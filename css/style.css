@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #resume,
 #skills,
 #started,
-#projects,
+#work,
 #blog,
 #pricing,
 #contact {
@@ -398,7 +398,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 0px;
 }
 
-
 .timeline .timeline-heading > div h3 {
   display: inline-block;
   padding: 7px 15px;
@@ -411,11 +410,6 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-}
-
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
 }
 
 .timeline > li:before, .timeline > li:after {
@@ -456,6 +450,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 
+
 .timeline > li > .timeline-badge i {
   display: table-cell;
   vertical-align: middle;
@@ -465,7 +460,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline > li.timeline-unverted {
   text-align: right;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
@@ -574,7 +568,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
 }
 
-.projects {
+.work {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -585,7 +579,7 @@ h1, h2, h3, h4, h5, h6, figure {
   overflow: hidden;
 }
 
-.projects .desc {
+.work .desc {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
@@ -595,14 +589,14 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.projects .desc h3 {
+.work .desc h3 {
   font-size: 20px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
   transform: translate3d(0, -15px, 0);
 }
-.projects .desc span {
+.work .desc span {
   display: block;
   color: #999999;
   font-size: 14px;
@@ -612,14 +606,14 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translate3d(0, 15px, 0);
 }
 
-.projects:hover .desc {
+.work:hover .desc {
   opacity: 1;
 }
-.projects:hover .desc h3 {
+.work:hover .desc h3 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.projects:hover .desc span {
+.work:hover .desc span {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -669,7 +663,6 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   height: 300px;
 }
-
 
 .blog .blog-text {
   margin-bottom: 30px;
@@ -742,11 +735,11 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
 }
-#consult .video, #consult .choose {
+#consult .fh5co-video, #consult .choose {
   display: inline-block;
 }
 
-#consult .video {
+#consult .fh5co-video {
   display: table;
   width: 50%;
   background-size: cover;
@@ -846,6 +839,11 @@ input[type="text"] {
   width: 100%;
   height: 500px;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  #map {
+    height: 200px;
+  }
 }
 
 .gototop {
