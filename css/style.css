@@ -15,6 +15,33 @@ body {
   background: #fff;
 }
 
+/* 
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF9000;
+  color: #fff;
+}
+
+.topnav a:active {
+  background-color: #FF9000;
+  color: #fff;
+}
+
+*/
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -247,7 +274,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #about,
-#resume,
 #skills,
 #started,
 #work,
@@ -325,6 +351,58 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 4rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
 #about .social-icons {
   margin: 0;
   padding: 0;
@@ -380,121 +458,6 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
-}
-
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-}
-.timeline:before {
-  top: 20px;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 2px;
-  background-color: #e6e6e6;
-  left: 50%;
-  margin-left: 0px;
-}
-
-.timeline .timeline-heading > div h3 {
-  display: inline-block;
-  padding: 7px 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  background: #e6e6e6;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.timeline > li:before, .timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li > .timeline-panel {
-  width: 45%;
-  float: left;
-  margin-bottom: 0;
-  position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.timeline > li > .timeline-badge {
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  margin-left: -21px;
-  background-color: #FF9000;
-  z-index: 100;
-  display: table;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
-
-.timeline > li > .timeline-badge i {
-  display: table-cell;
-  vertical-align: middle;
-  height: 44px;
-  font-size: 18px;
-}
-.timeline > li.timeline-unverted {
-  text-align: right;
-}
-.timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
-}
-.timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
-.timeline-title {
-  margin-top: 0;
-}
-
-.company {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: normal;
-  color: #bfbfbf;
-}
-
-.timeline-body > p,
-.timeline-body > ul {
-  margin-bottom: 0;
-}
-
-.timeline-body > p + p {
-  margin-top: 5px;
 }
 
 .progress-wrap {
@@ -1092,22 +1055,6 @@ input[type="text"] {
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
-  .timeline:before {
-    margin-left: -64px;
-  }
-
-  .timeline > li > .timeline-panel {
-    width: 75% !important;
-  }
-
-  .timeline > li > .timeline-panel:before {
-    top: 30px;
-  }
-
-  .timeline > li > .timeline-panel:after {
-    top: 31px;
-  }
-
   .projects {
     height: 270px;
   }
@@ -1145,7 +1092,6 @@ input[type="text"] {
   }
 
   #about,
-  #resume,
   #skills,
   #started,
   #projects,
@@ -1157,35 +1103,6 @@ input[type="text"] {
 
   .info {
     margin-bottom: 3em;
-  }
-
-  .timeline:before {
-    margin-left: -64px;
-  }
-
-  .timeline .timeline-heading {
-    margin-bottom: 30px;
-  }
-
-  .timeline .timeline-heading > div h3 {
-    float: left;
-    margin-bottom: 0;
-  }
-
-  .timeline > li {
-    margin-bottom: 4em;
-  }
-
-  .timeline > li > .timeline-panel {
-    width: 85% !important;
-  }
-
-  .timeline > li > .timeline-badge {
-    margin-left: -10px !important;
-  }
-
-  .timeline > li.timeline-unverted {
-    text-align: left;
   }
 
   .projects {
@@ -1244,44 +1161,6 @@ input[type="text"] {
 @media screen and (max-width: 992px) {
   #features .feature-left {
     margin-bottom: 30px;
-  }
-
-  .timeline > li > .timeline-badge {
-    margin-left: -10px !important;
-  }
-
-  ul.timeline:before {
-    left: 90px;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    width: calc(100% - 200px);
-    width: -moz-calc(100% - 200px);
-    width: -webkit-calc(100% - 200px);
-  }
-
-  ul.timeline > li > .timeline-badge {
-    left: 15px;
-    margin-left: 0;
-    top: 16px;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    float: right;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
   }
   
   .fh5co-video {
