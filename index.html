@@ -3,34 +3,35 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>My Portfolio</title>
+	<title>Dmitry, Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	
-	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	</head>
 	<body>
 		
 	<div class="loader"></div>
+
+<!--
+	<div class="topnav">
+		<a href="#page" class="active">Home</a>
+		<a href="#about" class="about">About me</a>
+		<a href="#features" class="services">Services</a>
+		<a href="#work" class="projects">Projects</a>
+		<a href="#contact" class="contact">Contact me</a>
+
+	</div>
+-->
 	
 	<div id="page">	
 	<header id="header" class="cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
@@ -41,13 +42,19 @@
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
-							<h1><span>Dmitry Maskaliov</span></h1>
-							<h3><span>Frontend Web Developer</span></h3>
+							<div class="stack" style="--stacks: 3;">
+								<span style="--index: 0;"><h1><span>Dmitry Maskaliov</span></h1></span>
+								<span style="--index: 1;"><h1><span>Dmitry Maskaliov</span></h1></span>
+								<span style="--index: 2;"><h1><span>Dmitry Maskaliov</span></h1></span>
+							  </div>
+								<div class="typewriter">
+									<h3><span class="auto-type"></span></h3>
+								</div>
 							<p>
 								<ul class="social-icons">
-									<li><a href="https://github.com/tsukijidsgn"><i class="icon-github2"></i></a></li>
-									<li><a href="https://instagram.com/dimass_blin?igshid=NzZlODBkYWE4Ng=="><i class="icon-instagram2"></i></a></li>									
-									<li><a href="https://www.linkedin.com/in/dmitry-maskaliov/"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/tsukijidsgn"><i class='bx bxl-github' ></i></a></li>								
+									<li><a href="https://www.linkedin.com/in/dmitry-maskaliov/"><i class='bx bxl-linkedin-square'></i></a></li>
+									<li><a href="mailto:dmitrym.webdev@gmail.com"><i class='bx bx-envelope'></i></a></li>
 								</ul>
 							</p>
 						</div>
@@ -69,7 +76,7 @@
 					<ul class="info">
 						<li><span class="first-block">Full Name:</span><span class="second-block">Dmitry Maskaliov</span></li>
 						<li><span class="first-block">Email:</span><span class="second-block">dmitrym.webdev <br> @gmail.com</span></li>
-						<li><span class="first-block">Address:</span><span class="second-block">31500 Toulouse, France</span></li>
+						<li><span class="first-block">Address:</span><span class="second-block">Toulouse, France</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8">
@@ -78,12 +85,12 @@
 					journey by taking a front-end web developer course at OpenClassrooms, where I gained a strong foundation in front-end languages: HTML, CSS, and JavaScript</p>
 					<p>My commitment to continuous improvement has driven me to pursue self-learning, exploring new technologies such as front-end frameworks and trends to stay 
 					at the forefront of my field. My insatiable curiosity and open-mindedness have allowed me to approach each project with enthusiasm and creativity.</p>
-					<p>Currently seeking new opportunities and employment in the field, I am eager to contribute to exciting projects and collaborate with innovative minds!</p>
+					<p>If you have any project in mind, feel free to contact me !</p>
 					<p>
 						<ul class="social-icons">
-							<li><a href="https://github.com/tsukijidsgn"><i class="icon-github2"></i></a></li>
-							<li><a href="https://instagram.com/dimass_blin?igshid=NzZlODBkYWE4Ng=="><i class="icon-instagram2"></i></a></li>									
-							<li><a href="https://www.linkedin.com/in/dmitry-maskaliov/"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="https://github.com/tsukijidsgn"><i class='bx bxl-github' ></i></a></li>								
+							<li><a href="https://www.linkedin.com/in/dmitry-maskaliov/"><i class='bx bxl-linkedin-square'></i></a></li>
+							<li><a href="mailto:dmitrym.webdev@gmail.com"><i class='bx bx-envelope'></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -100,7 +107,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/Booki/" class="work" style="background-image: url(images/portfolio-1.png);">
+					<a href="https://tsukijidsgn.github.io/Booki/" target="_blank" class="work" style="background-image: url(images/portfolio-1.png);">
 						<div class="desc">
 							<h3>Booki</h3>
 							<span>Html / Css</span>
@@ -108,7 +115,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/Cuppa-Joy/" class="work" style="background-image: url(images/portfolio-2.png);">
+					<a href="https://tsukijidsgn.github.io/Cuppa-Joy/" target="_blank" class="work" style="background-image: url(images/portfolio-2.png);">
 						<div class="desc">
 							<h3>Cuppa Joy</h3>
 							<span>Html / Css / JavaScript</span>
@@ -116,7 +123,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/The-FitZone/" class="work" style="background-image: url(images/portfolio-3.jpg);">
+					<a href="https://tsukijidsgn.github.io/The-FitZone/" target="_blank" class="work" style="background-image: url(images/portfolio-3.jpg);">
 						<div class="desc">
 							<h3>The FitZone</h3>
 							<span>Html / Css / JavaScript</span>
@@ -124,7 +131,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/The-Trimmed/" class="work" style="background-image: url(images/portfolio-4.PNG);">
+					<a href="https://tsukijidsgn.github.io/The-Trimmed/" target="_blank" class="work" style="background-image: url(images/portfolio-4.PNG);">
 						<div class="desc">
 							<h3>The Trimmed</h3>
 							<span>Html / Css / JavaScript</span>
@@ -132,7 +139,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/Wanderlust-Diaries/" class="work" style="background-image: url(images/portfolio-5.PNG);">
+					<a href="https://tsukijidsgn.github.io/Wanderlust-Diaries/" target="_blank" class="work" style="background-image: url(images/portfolio-5.PNG);">
 						<div class="desc">
 							<h3>Wanderlust Diaries</h3>
 							<span>Html / Css</span>
@@ -140,7 +147,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/seo-agency/" class="work" style="background-image: url(images/portfolio-6.png);">
+					<a href="https://tsukijidsgn.github.io/seo-agency/" target="_blank" class="work" style="background-image: url(images/portfolio-6.png);">
 						<div class="desc">
 							<h3>Seo Agency</h3>
 							<span>Html / Css / JavaScript</span>
@@ -148,7 +155,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://jacquelinerallier.com" class="work" style="background-image: url(images/portfolio-7.jpg);">
+					<a href="https://jacquelinerallier.com" class="work" target="_blank" style="background-image: url(images/portfolio-7.jpg);">
 						<div class="desc">
 							<h3>Jacqueline Rallier</h3>
 							<span>WordPress</span>
@@ -157,7 +164,7 @@
 				</div>
 
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/grayscale/" class="work" style="background-image: url(images/portfolio-8.jpg);">
+					<a href="https://tsukijidsgn.github.io/grayscale/" target="_blank" class="work" style="background-image: url(images/portfolio-8.jpg);">
 						<div class="desc">
 							<h3>Grayscale</h3>
 							<span>Bootstrap</span>
@@ -166,253 +173,12 @@
 				</div>
 
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/graphicdesign/" class="work" style="background-image: url(images/portfolio-9.png);">
+					<a href="https://tsukijidsgn.github.io/graphicdesign/" target="_blank" class="work" style="background-image: url(images/portfolio-9.png);">
 						<div class="desc">
 							<h3>EduWell</h3>
 							<span>Html / Css / JavaScript</span>
 						</div>
 					</a>
-				</div>
-
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tsukijidsgn.github.io/camillemormalrepo/" class="work" style="background-image: url(images/portfolio-10.jpg);">
-						<div class="desc">
-							<h3>Camille Mormal</h3>
-							<span>Html / Css / JavaScript</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="resume" class="bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Front end developer</h3>
-									<span class="company">Freelance - March 2023 - Today</span>
-								</div>
-								<div class="timeline-body">
-									<p>Designed professional landing pages</p>
-									<p>Embed Figma Mockups</p>
-									<p>Optimized HTML, CSS and JavaScript code</p>
-									<p>Created, edited WordPress websites</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Front end Developer</h3>
-									<span class="company">Paragraph Coffee - January 2022 - February 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p>Optimized websites in direct cooperation with graphic designers and SEO
-									specialists</p>
-									<p>Implemented new features as part of the redesign of the website</p>
-									<p>Made sure the site is responsive</p>
-									<p>Managed the maintenance of the website</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Self-taugh Front end Developer</h3>
-									<span class="company">Personal projects - Since November 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Landing pages</p>
-									<p>Professional multi-page websites</p>
-									<p>Web Design on Wix / Tilda / WordPress</p>
-									<p>E-commerce websites building on Shopify</p>
-									<p>Portfolio website</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Front end training project</h3>
-									<span class="company">Booki - August 2021 - October 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Built a seamless website that adapts to any type of screen</p>
-									<p>Assemble and integrate all elements of a graphical model in HTML5 and CSS</p>
-									<p>Add audio and video content in HTML5</p>
-									<p>Built a maintainable site with error and exception management</p>
-									<p>Created, managed and displayed the contents of a database</p>
-								</div>
-							</div>
-						</li>
-
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">IT Security Online Training</h3>
-									<span class="company">CNFDI - Since May 2022</span>
-								</div>
-								<div class="timeline-body">
-									<p>Implementing robust firewall configurations</p>
-									<p>Conducting regular vulnerability assessments</p>
-									<p>Developing security policies</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Self-Taught Front end Developper</h3>
-									<span class="company">Since November 2022</span>
-								</div>
-								<div class="timeline-body">
-									<p>Started learning Solidity language</p>
-									<p>Developped different personal websites using front end frameworks (Bootstrap, ReactJS)</p>
-									<p>Coded portfolio website</p>
-									<p>Implemented the code to GitHub repository</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Online training as Front end Developer</h3>
-									<span class="company">OpenClassrooms - May 2021 - October 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Built a seamless website that adapts to any type of screen</p>
-									<p>Assemble and integrate all elements of a graphical model in HTML5 and CSS</p>
-									<p>Add audio and video content in HTML5</p>
-									<p>Built a maintainable site with error and exception management</p>
-									<p>Created, managed and displayed the contents of a database</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Baccalauréat STMG Marketing specialty</h3>
-									<span class="company">Lycée Claude Nougaro - 2015 - 2016</span>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	<div id="features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading">
-						<h2>My Services</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-display"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Development</h3>
-								<p>Tailored, fully responsive websites built from the ground up to suit your unique business needs.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>User-Centric Interface Design</h3>
-								<p>Crafting visually engaging, intuitive user interfaces that captivate your audience and enhance user experiences.</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-stopwatch"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Performance Optimization</h3>
-								<p>Streamlining websites for lightning-fast loading times and seamless interactions to keep your users engaged.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="col-md-4 text-center">
-
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-sphere"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Cross-Browser Compatibility</h3>
-								<p>Ensuring flawless functionality and consistent appearance across a spectrum of web browsers, maximizing your reach.</p>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-genius"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Responsive Web Design</h3>
-								<p>Designing adaptable layouts that effortlessly scale and adapt to various devices, from desktops to mobile phones, for a cohesive user journey.</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-chat"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Code Review and Debgging Support</h3>
-								<p>Peoviding assistance in reviewing and debugging code to ensure robust, error-free functionality</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -511,6 +277,96 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading">
+						<h2>My Services</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-display"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Development</h3>
+								<p>Tailored, fully responsive websites built from the ground up to suit your unique business needs.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-paintbrush"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>User-Centric Interface Design</h3>
+								<p>Crafting visually engaging, intuitive user interfaces that captivate your audience and enhance user experiences.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-stopwatch"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Performance Optimization</h3>
+								<p>Streamlining websites for lightning-fast loading times and seamless interactions to keep your users engaged.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 text-center">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-sphere"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Cross-Browser Compatibility</h3>
+								<p>Ensuring flawless functionality and consistent appearance across a spectrum of web browsers, maximizing your reach.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Responsive Web Design</h3>
+								<p>Designing adaptable layouts that effortlessly scale and adapt to various devices, from desktops to mobile phones, for a cohesive user journey.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-chat"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Code Review and Debugging Support</h3>
+								<p>Peoviding assistance in reviewing and debugging code to ensure robust, error-free functionality</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div id="footer">
 		<div class="container">
@@ -545,6 +401,17 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+	<!-- Auto-type -->
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+	<script>
+		var typed = new Typed(".auto-type", {
+			strings: ["Developer", "UI/UX Designer", "Freelancer"],
+			typeSpeed : 50,
+			backSpeed : 150,
+			loop: true
+		})
+	</script>
+
 	</body>
 </html>
-
